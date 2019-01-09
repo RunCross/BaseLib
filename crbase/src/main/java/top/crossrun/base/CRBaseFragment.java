@@ -1,5 +1,6 @@
 package top.crossrun.base;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.LayoutRes;
@@ -10,7 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public abstract class IBaseFragment extends Fragment {
+public abstract class CRBaseFragment extends Fragment {
 
     View rootView;
 
@@ -38,6 +39,26 @@ public abstract class IBaseFragment extends Fragment {
             return rootView.findViewById(id);
         }
         return null;
+    }
+
+    private ProgressDialog mProgressDialog;
+
+
+    protected void showProgressDialog() {
+        if (mProgressDialog==null){
+            mProgressDialog = new ProgressDialog(getContext(), R.style.cr_wait_dialog);
+            mProgressDialog.setCanceledOnTouchOutside(false);
+        }
+        if(mProgressDialog != null && !mProgressDialog.isShowing()){
+            mProgressDialog.show();
+            mProgressDialog.setContentView(R.layout.cr_common_request_layout);
+        }
+    }
+
+    protected void dissmissProgressDialog() {
+        if(mProgressDialog != null && mProgressDialog.isShowing()){
+            mProgressDialog.dismiss();
+        }
     }
 
     protected abstract @LayoutRes

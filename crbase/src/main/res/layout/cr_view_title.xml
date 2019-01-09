@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/title_base"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/color_base">
+
+    <ImageView
+        android:id="@+id/title_back"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:padding="13dp"
+        android:src="@mipmap/back_iv_bg"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="这是标题" />
+
+    <ImageView
+        android:id="@+id/rightImg"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent" />
+    <TextView
+        android:id="@+id/rightImgTv"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

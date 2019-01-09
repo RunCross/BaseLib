@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/BaseLib.iml" filepath="$PROJECT_DIR$/BaseLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/crbase/crbase.iml" filepath="$PROJECT_DIR$/crbase/crbase.iml" />
-      <module fileurl="file://$PROJECT_DIR$/recycle/recycle.iml" filepath="$PROJECT_DIR$/recycle/recycle.iml" />
     </modules>
   </component>
 </project>

@@ -1,1 +1,1 @@
-include ':app', ':crbase', ':recycle'
+include ':app', ':crbase'
