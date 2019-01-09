@@ -6,8 +6,6 @@ group='com.github.RunCross'
 android {
     compileSdkVersion 28
 
-
-
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 28

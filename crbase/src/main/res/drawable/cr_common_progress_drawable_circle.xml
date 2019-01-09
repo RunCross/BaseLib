@@ -17,7 +17,7 @@
         android:id="@android:id/progress"
         android:gravity="center">
         <rotate
-            android:drawable="@mipmap/common_loading_circle"
+            android:drawable="@mipmap/cr_common_loading_circle"
             android:fromDegrees="0"
             android:pivotX="50%"
             android:pivotY="50%"
